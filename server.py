@@ -11,9 +11,9 @@ def index():
     return render_template('index.html')
 
 @app.route('/reset')
-def increment():
+def reset():
     session.clear()
     return redirect('/')
 
 if __name__=='__main__':
-    app.run(debug=True, host='localhost', port=5001)
+    app.run(debug=True, host='localhost', port=5002)
